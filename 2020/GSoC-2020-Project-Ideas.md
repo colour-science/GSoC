@@ -18,20 +18,20 @@ It is freely available under the [New BSD License](https://opensource.org/licens
 
 #### Abstract
 
-Most of Colour's code is vectorised, leverages [Numpy]([NumPy — NumPy](https://numpy.org/), while trying to be as faithful as possible to the scientific publications implemented. Speed has never been the primary focus for the development, however, it is often an important factor to consider when adopting a library thus we would like to improve the general performance of Colour.
+Most of Colour's code is vectorised through [Numpy](https://numpy.org/), while trying to be as faithful as possible to the scientific publications implemented. Execution speed has never been the primary focus for the development, however, it is often an important factor to consider when adopting a library thus we would like to improve the general performance of Colour.
 
 | **Objectives** | **Difficulty** | **Mentors** |
 | --- | --- | --- |
-| Implementing a benchmarking suite, measuring performance, improving speed in image processing hotspots, and investigating usage of [CuPy](https://cupy.chainer.org/), [Bohrium](https://github.com/bh107/bohrium) or any relevant GPU backend. | Medium | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| Implementing a benchmarking suite, investigating usage of [CuPy](https://cupy.chainer.org/), [Bohrium](https://github.com/bh107/bohrium) or any relevant GPU backend (e.g., OpenCL), measuring performance, and finally based on the initial investigation, improving speed in image processing hotspots. | Medium/High | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Detailed Description
 
-Performance measurements requires the creation of a benchmarking suite. [Airspeed Velocity (ASV)](https://asv.readthedocs.io/) is a tool for benchmarking Python packages, used by [scikit-image](https://scikit-image.org/docs/dev/contribute.html#benchmarks). It might be helpful to manage the benchmarking suite. Good performance is expected when processing large images, e.g HD1080, UHD resolution, thus focusing on image processing transformations such as CIE XYZ to CIE Lab is preferred. CuPy and Bohrium are two GPU backends of interest: they offer an almost standin Numpy like API. They might provide significant performance improvement for a minimal amount of work.
+Performance measurements require the creation of a benchmarking suite that can quantify the improvements. [Airspeed Velocity (ASV)](https://asv.readthedocs.io/) is a tool for benchmarking Python packages, used by [scikit-image](https://scikit-image.org/docs/dev/contribute.html#benchmarks) and would be a suitable candidate. The benchmark should ensure that basic colour conversions (e.g., CIE XYZ to CIE Lab) run with a good performance when processing large images, e.g. HD1080, UHD resolution. At this stage, we are interested in trying out drop-in improvements like CuPy and Bohrium: they offer an almost drop-in Numpy like API. They might provide significant performance improvement to the whole library for a minimal amount of work. However, we are open to evaluating more manual improvements like re-implementing algorithms in, e.g., OpenCL or Rust.
 
 #### Initial Steps
 
-- Investigate ASV
-- Design the foundations of a benchmarking suite for Colour
+- Investigate [Airspeed Velocity](https://asv.readthedocs.io/)
+- Design and implement a benchmarking suite for Colour
 - Discuss with the Colour developers about the preferred transformations to measure the performance of and benchmark them
 - Investigate possible optimizations and GPU backends
 
@@ -45,7 +45,7 @@ Performance measurements requires the creation of a benchmarking suite. [Airspee
 
 #### Abstract
 
-Colour implements various Colour Appearance Models (CAM), most notably Hunt, CIECAM02 and CAM16. Various new models would be useful for research purposes, especially for High Dynamic Range (HDR) imagery processing.
+Colour implements Colour Appearance Models (CAM), most notably Hunt, CIECAM02 and CAM16. More models would be useful for research purposes, especially for High Dynamic Range (HDR) image processing.
 
 | **Objectives** | **Difficulty** | **Mentors** |
 | --- | --- | --- |
@@ -68,6 +68,7 @@ Colour implements various Colour Appearance Models (CAM), most notably Hunt, CIE
 #### Useful Experience
 
 - Colour sicence and colour appearance modeling
+- Ability to read scientific publications
 - Knowledge of Numpy and Scipy
 - Basic knowledge of Colour
 
@@ -94,6 +95,7 @@ Colour implements the SSI, CRI and CQS quality metrics, the two latter have been
 #### Useful Experience
 
 - Colour sicence and colour quality
+- Ability to read scientific publications
 - Knowledge of Numpy and Scipy
 - Basic knowledge of Colour
 
