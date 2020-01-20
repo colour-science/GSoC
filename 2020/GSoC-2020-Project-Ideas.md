@@ -29,7 +29,11 @@ It is freely available under the [New BSD License](https://opensource.org/licens
 
 #### Abstract
 
-Most of Colour's code is vectorised through [Numpy](https://numpy.org/), while trying to be as faithful as possible to the scientific publications implemented. Execution speed has never been the primary focus for the development, however, it is often an important factor to consider when adopting a library thus we would like to improve the general performance of Colour.
+Most of Colour's code is vectorised through [Numpy](https://numpy.org/), while
+trying to be as faithful as possible to the scientific publications implemented.
+Execution speed has never been the primary focus for the development, however,
+it is often an important factor to consider when adopting a library thus we
+would like to improve the general performance of Colour.
 
 | **Objectives** | **Difficulty** | **Mentors** |
 | --- | --- | --- |
@@ -37,13 +41,25 @@ Most of Colour's code is vectorised through [Numpy](https://numpy.org/), while t
 
 #### Detailed Description
 
-Performance measurements require the creation of a benchmarking suite that can quantify the improvements. [Airspeed Velocity (ASV)](https://asv.readthedocs.io/) is a tool for benchmarking Python packages, used by [scikit-image](https://scikit-image.org/docs/dev/contribute.html#benchmarks) and would be a suitable candidate. The benchmark should ensure that basic colour conversions (e.g., CIE XYZ to CIE Lab) run with a good performance when processing large images, e.g. HD1080, UHD resolution. At this stage, we are interested in trying out drop-in improvements like CuPy and Bohrium: they offer an almost drop-in Numpy like API. They might provide significant performance improvement to the whole library for a minimal amount of work. However, we are open to evaluating more manual improvements like re-implementing algorithms in, e.g. Cython, Rust or OpenCL.
+Performance measurements require the creation of a benchmarking suite that can
+quantify the improvements. [Airspeed Velocity (ASV)](https://asv.readthedocs.io/)
+is a tool for benchmarking Python packages, used by
+[scikit-image](https://scikit-image.org/docs/dev/contribute.html#benchmarks)
+and would be a suitable candidate. The benchmark should ensure that basic
+colour conversions (e.g., CIE XYZ to CIE Lab) run with a good performance when
+processing large images, e.g. HD1080, UHD resolution. At this stage, we are
+interested in trying out drop-in improvements like CuPy and Bohrium: they offer
+an almost drop-in Numpy like API. They might provide significant performance
+improvement to the whole library for a minimal amount of work. We are also open
+to evaluating manual improvements su as re-implementing algorithms directly
+with Cython, Rust or OpenCL.
 
 #### Initial Steps
 
 - Investigate [Airspeed Velocity](https://asv.readthedocs.io/)
 - Design and implement a benchmarking suite for Colour
-- Discuss with the Colour developers about the preferred transformations to measure the performance of and benchmark them
+- Discuss with the Colour developers about the preferred transformations to
+  measure the performance of and benchmark them
 - Investigate possible optimizations and GPU backends
 
 #### Useful Experience
@@ -56,7 +72,9 @@ Performance measurements require the creation of a benchmarking suite that can q
 
 #### Abstract
 
-Colour implements Colour Appearance Models (CAM), most notably Hunt, CIECAM02 and CAM16. More models would be useful for research purposes, especially for High Dynamic Range (HDR) image processing.
+Colour implements Colour Appearance Models (CAM), most notably Hunt, CIECAM02
+and CAM16. More models would be useful for research purposes, especially for
+High Dynamic Range (HDR) image processing.
 
 | **Objectives** | **Difficulty** | **Mentors** |
 | --- | --- | --- |
@@ -64,7 +82,17 @@ Colour implements Colour Appearance Models (CAM), most notably Hunt, CIECAM02 an
 
 #### Detailed Description
 
-[Colour appearance modeling](https://en.wikipedia.org/wiki/Color_appearance_model) is critical to the prediction of colours under different viewing conditions. The current model recommended by the [CIE](http://cie.co.at/) is [CIECAM02](https://en.wikipedia.org/wiki/CIECAM02) and is not designed to process HDR imagery. [Sadfar et al. (2018)](https://doi.org/10.2352/ISSN.2169-2629.2018.26.96) proposed a new CAM based on JzAzBz colourspace with support for HDR imagery. Other CAMs such as [iCAM06](https://doi.org/10.1016/j.jvcir.2007.06.003), [Kim, Weyrich and Kautz (2009)](https://dl.acm.org/doi/abs/10.1145/1531326.1531333), the [Comprehensive CAM](https://doi.org/10.1002/col.22078), and [CAM15u](https://doi.org/10.1364/OE.23.012045) are also prime candidates for inclusion.
+[Colour appearance modeling](https://en.wikipedia.org/wiki/Color_appearance_model)
+is critical to the prediction of colours under different viewing conditions.
+The current model recommended by the [CIE](http://cie.co.at/) is
+[CIECAM02](https://en.wikipedia.org/wiki/CIECAM02) and is not designed to
+process HDR imagery. [Sadfar et al. (2018)](https://doi.org/10.2352/ISSN.2169-2629.2018.26.96)
+proposed a new CAM based on JzAzBz colourspace with support for HDR imagery.
+Other CAMs such as [iCAM06](https://doi.org/10.1016/j.jvcir.2007.06.003),
+[Kim, Weyrich and Kautz (2009)](https://dl.acm.org/doi/abs/10.1145/1531326.1531333),
+the [Comprehensive CAM](https://doi.org/10.1002/col.22078), and
+[CAM15u](https://doi.org/10.1364/OE.23.012045) are also prime candidates for
+addition.
 
 #### Initial Steps
 
@@ -87,7 +115,11 @@ Colour implements Colour Appearance Models (CAM), most notably Hunt, CIECAM02 an
 
 #### Abstract
 
-The CIE current recommended method for measuring Colour Quality is the [CIE 2017 Colour Fidelity Index (CFI 2017)](http://cie.co.at/publications/cie-2017-colour-fidelity-index-accurate-scientific-use). It supersedes the [Colour Rendering Index (CRI)](https://en.wikipedia.org/wiki/Color_rendering_index) and should be implemented in Colour along with the related [IES TM-30-15](http://www.ies.org/store/product/ies-method-for-evaluating-light-source-color-rendition-3368.cfm).
+The CIE current recommended method for measuring Colour Quality is the
+[CIE 2017 Colour Fidelity Index (CFI 2017)](http://cie.co.at/publications/cie-2017-colour-fidelity-index-accurate-scientific-use).
+It supersedes the [Colour Rendering Index (CRI)](https://en.wikipedia.org/wiki/Color_rendering_index)
+and should be implemented in Colour along with the related
+[IES TM-30-15](http://www.ies.org/store/product/ies-method-for-evaluating-light-source-color-rendition-3368.cfm).
 
 | **Objectives** | **Difficulty** | **Mentors** |
 | --- | --- | --- |
@@ -95,7 +127,9 @@ The CIE current recommended method for measuring Colour Quality is the [CIE 2017
 
 #### Detailed Description
 
-Colour implements the SSI, CRI and CQS quality metrics, the two latter have been superseded with IES TM-30-15 and CFI 2017. To bring Colour up to latest standards, those two metrics need to be implemented.
+Colour implements the SSI, CRI and CQS quality metrics, the two latter have
+been superseded with IES TM-30-15 and CFI 2017. To bring Colour up to latest
+standards, those two metrics need to be implemented.
 
 #### Initial Steps
 
@@ -113,7 +147,10 @@ Colour implements the SSI, CRI and CQS quality metrics, the two latter have been
 ### *New Spectral Upsampling Methods*
 
 Spectral upsampling (or recovery) is the conversion of CIE XYZ tristimulus values
-(or RGB values) to the spectral domain. Colour already implements [Smith (1999)](https://doi.org/10.1080/10867651.1999.10487511) and [Meng et al. (2015)](https://doi.org/10.1111/cgf.12676) methods and would benefit from the latest research algorithms.
+(or RGB values) to the spectral domain. Colour already implements
+[Smith (1999)](https://doi.org/10.1080/10867651.1999.10487511) and
+[Meng et al. (2015)](https://doi.org/10.1111/cgf.12676) methods and would
+benefit from the latest research algorithms.
 
 #### Abstract
 
@@ -127,11 +164,16 @@ Spectral representation and processing is critical to faithfully model
 metamerism and accurately produce radiometric quantities. Unfortunately,
 spectral data is not widespread and spectral imagery even more so, while
 imposing huge acquisition and processing constraints. Spectral upsampling is
-used in modern research rendering systems such as
-[PBRT](https://github.com/mmp/pbrt-v3) and [Mitsuba](https://www.mitsuba-renderer.org/)
-or production renderers such as [Manuka](https://www.wetafx.co.nz/research-and-tech/technology/manuka/) to convert input colours and textures to the spectral domain.
-Research is active around this topic with recent publications from [Otsu et al. (2018)](http://lightmetrica.org/h-otsu/project/rgb2spec/), [Jakob and Hanika (2019)](http://rgl.epfl.ch/publications/Jakob2019Spectral), [Mallett and Yuksel (2019)](https://geometrian.com/data/research/spectral-primaries/EGSR2019_SpectralPrimaryDecomposition.pdf) or [Peters et al. (2019)](https://doi.org/10.1145/3306346.3322964). Colour would
- benefit from having those algorithms implemented for research purposes.
+used in modern research rendering systems such as [PBRT](https://github.com/mmp/pbrt-v3)
+and [Mitsuba](https://www.mitsuba-renderer.org/) or production renderers such
+as [Manuka](https://www.wetafx.co.nz/research-and-tech/technology/manuka/) to
+convert input colours and textures to the spectral domain. Research is active
+around this topic with recent publications from
+[Otsu et al. (2018)](http://lightmetrica.org/h-otsu/project/rgb2spec/),
+[Jakob and Hanika (2019)](http://rgl.epfl.ch/publications/Jakob2019Spectral),
+[Mallett and Yuksel (2019)](https://geometrian.com/data/research/spectral-primaries/EGSR2019_SpectralPrimaryDecomposition.pdf)
+or [Peters et al. (2019)](https://doi.org/10.1145/3306346.3322964). Colour
+would highly benefit from having those algorithms implemented.
 
 #### Initial Steps
 
