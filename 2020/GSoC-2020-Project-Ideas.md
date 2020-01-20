@@ -26,7 +26,7 @@ Most of Colour's code is vectorised through [Numpy](https://numpy.org/), while t
 
 #### Detailed Description
 
-Performance measurements require the creation of a benchmarking suite that can quantify the improvements. [Airspeed Velocity (ASV)](https://asv.readthedocs.io/) is a tool for benchmarking Python packages, used by [scikit-image](https://scikit-image.org/docs/dev/contribute.html#benchmarks) and would be a suitable candidate. The benchmark should ensure that basic colour conversions (e.g., CIE XYZ to CIE Lab) run with a good performance when processing large images, e.g. HD1080, UHD resolution. At this stage, we are interested in trying out drop-in improvements like CuPy and Bohrium: they offer an almost drop-in Numpy like API. They might provide significant performance improvement to the whole library for a minimal amount of work. However, we are open to evaluating more manual improvements like re-implementing algorithms in, e.g., OpenCL or Rust.
+Performance measurements require the creation of a benchmarking suite that can quantify the improvements. [Airspeed Velocity (ASV)](https://asv.readthedocs.io/) is a tool for benchmarking Python packages, used by [scikit-image](https://scikit-image.org/docs/dev/contribute.html#benchmarks) and would be a suitable candidate. The benchmark should ensure that basic colour conversions (e.g., CIE XYZ to CIE Lab) run with a good performance when processing large images, e.g. HD1080, UHD resolution. At this stage, we are interested in trying out drop-in improvements like CuPy and Bohrium: they offer an almost drop-in Numpy like API. They might provide significant performance improvement to the whole library for a minimal amount of work. However, we are open to evaluating more manual improvements like re-implementing algorithms in, e.g. Cython, Rust or OpenCL.
 
 #### Initial Steps
 
@@ -94,7 +94,7 @@ Colour implements the SSI, CRI and CQS quality metrics, the two latter have been
 
 #### Useful Experience
 
-- Colour sicence and colour quality
+- Colour science and colour quality
 - Ability to read scientific publications
 - Knowledge of Numpy and Scipy
 - Basic knowledge of Colour
