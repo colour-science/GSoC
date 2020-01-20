@@ -6,7 +6,7 @@ Introduction
 
 `Colour Science for Python <https://github.com/colour-science/colour>`__
 participates in `Google Summer of Code (GSoC) <https://summerofcode.withgoogle.com/>`__
-under `NumFOCUS <http://numfocus.org/>`__.
+under `NumFOCUS <http://numfocus.org/>`__ umbrella.
 
 This repository contains the various documents pertaining to our participation.
 
