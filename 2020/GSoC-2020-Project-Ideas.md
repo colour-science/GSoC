@@ -7,6 +7,17 @@ algorithms and datasets for colour science.
 
 It is freely available under the [New BSD License](https://opensource.org/licenses/BSD-3-Clause) terms.
 
+## Table of Contents <!-- omit in toc -->
+
+- [Colour Science for Python](#colour-science-for-python)
+- [Mentors](#mentors)
+- [Project Ideas](#project-ideas)
+  - [*The Need for Speed*](#the-need-for-speed)
+  - [*New Colour Appearance Models*](#new-colour-appearance-models)
+  - [*New Colour Quality Metrics*](#new-colour-quality-metrics)
+  - [*New Spectral Upsampling Methods*](#new-spectral-upsampling-methods)
+  - [*LUT IO Improvements*](#lut-io-improvements)
+
 ## Mentors
 
 - [Michael Mauderer](https://github.com/MichaelMauderer)
@@ -96,6 +107,46 @@ Colour implements the SSI, CRI and CQS quality metrics, the two latter have been
 
 - Colour science and colour quality
 - Ability to read scientific publications
+- Knowledge of Numpy and Scipy
+- Basic knowledge of Colour
+
+### *New Spectral Upsampling Methods*
+
+Spectral upsampling (or recovery) is the conversion of CIE XYZ tristimulus values
+(or RGB values) to the spectral domain. Colour already implements [Smith (1999)](https://doi.org/10.1080/10867651.1999.10487511) and [Meng et al. (2015)](https://doi.org/10.1111/cgf.12676) methods and would benefit from the latest research algorithms.
+
+#### Abstract
+
+| **Objectives** | **Difficulty** | **Mentors** |
+| --- | --- | --- |
+| Implement new Spectral Upsampling Methods. | Medium | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+
+#### Detailed Description
+
+Spectral representation and processing is critical to faithfully model
+metamerism and accurately produce radiometric quantities. Unfortunately,
+spectral data is not widespread and spectral imagery even more so, while
+imposing huge acquisition and processing constraints. Spectral upsampling is
+used in modern research rendering systems such as
+[PBRT](https://github.com/mmp/pbrt-v3) and [Mitsuba](https://www.mitsuba-renderer.org/)
+or production renderers such as [Manuka](https://www.wetafx.co.nz/research-and-tech/technology/manuka/) to convert input colours and textures to the spectral domain.
+Research is active around this topic with recent publications from [Otsu et al. (2018)](http://lightmetrica.org/h-otsu/project/rgb2spec/), [Jakob and Hanika (2019)](http://rgl.epfl.ch/publications/Jakob2019Spectral), [Mallett and Yuksel (2019)](https://geometrian.com/data/research/spectral-primaries/EGSR2019_SpectralPrimaryDecomposition.pdf) or [Peters et al. (2019)](https://doi.org/10.1145/3306346.3322964). Colour would
+ benefit from having those algorithms implemented for research purposes.
+
+#### Initial Steps
+
+- Research the latest publications and literature on spectral upsampling
+- Study the `colour.recovery` sub-package
+- Implement support in priority for Otsu et al. (2018) and Jakob and Hanika (2019)
+  methods
+- Implement support for Mallett and Yuksel (2019) and Peters et al. (2019) in
+  a second time, and if only nothing significant was highlighted in recent
+  research.
+
+#### Useful Experience
+
+- Colour science and spectral rendering
+- Experience in numerical optimization
 - Knowledge of Numpy and Scipy
 - Basic knowledge of Colour
 
