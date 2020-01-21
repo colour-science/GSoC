@@ -39,7 +39,7 @@ would like to improve the general performance of Colour.
 | --- | --- | --- |
 | Implementing a benchmarking suite, investigating usage of [CuPy](https://cupy.chainer.org/), [Bohrium](https://github.com/bh107/bohrium) or any relevant GPU backend (e.g., OpenCL), measuring performance, and finally based on the initial investigation, improving speed in image processing hotspots. | Medium/High | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
-#### Detailed Description
+#### Technical Details
 
 Performance measurements require the creation of a benchmarking suite that can
 quantify the improvements. [Airspeed Velocity (ASV)](https://asv.readthedocs.io/)
@@ -54,19 +54,19 @@ improvement to the whole library for a minimal amount of work. We are also open
 to evaluating manual improvements su as re-implementing algorithms directly
 with Cython, Rust or OpenCL.
 
-#### Initial Steps
+#### Helpful Experience
+
+- Experience with testing or benchmarking numerical code
+- Knowledge of Numpy, Scipy, vectorisation and GPU programming
+- Basic knowledge of Colour
+
+#### First Steps
 
 - Investigate [Airspeed Velocity](https://asv.readthedocs.io/)
 - Design and implement a benchmarking suite for Colour
 - Discuss with the Colour developers about the preferred transformations to
   measure the performance of and benchmark them
 - Investigate possible optimizations and GPU backends
-
-#### Useful Experience
-
-- Experience with testing or benchmarking numerical code
-- Knowledge of Numpy, Scipy, vectorisation and GPU programming
-- Basic knowledge of Colour
 
 ### *New Colour Appearance Models*
 
@@ -80,7 +80,7 @@ High Dynamic Range (HDR) image processing.
 | --- | --- | --- |
 | Implement new Colour Appearance Models. | Medium | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
-#### Detailed Description
+#### Technical Details
 
 [Colour appearance modeling](https://en.wikipedia.org/wiki/Color_appearance_model)
 is critical to the prediction of colours under different viewing conditions.
@@ -94,7 +94,14 @@ the [Comprehensive CAM](https://doi.org/10.1002/col.22078), and
 [CAM15u](https://doi.org/10.1364/OE.23.012045) are also prime candidates for
 addition.
 
-#### Initial Steps
+#### Helpful Experience
+
+- Colour sicence and colour appearance modeling
+- Ability to read scientific publications
+- Knowledge of Numpy and Scipy
+- Basic knowledge of Colour
+
+#### First Steps
 
 - Study the `colour.appearance` sub-package
 - Implement Sadfar et al. (2018) CAM forward and reverse transformations
@@ -103,13 +110,6 @@ addition.
     - Kim, Weyrich and Kautz (2009)
     - Comprehensive CAM
     - CAM15u
-
-#### Useful Experience
-
-- Colour sicence and colour appearance modeling
-- Ability to read scientific publications
-- Knowledge of Numpy and Scipy
-- Basic knowledge of Colour
 
 ### *New Colour Quality Metrics*
 
@@ -125,24 +125,24 @@ and should be implemented in Colour along with the related
 | --- | --- | --- |
 | Implement new Colour Quality Metrics. | Medium | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
-#### Detailed Description
+#### Technical Details
 
 Colour implements the SSI, CRI and CQS quality metrics, the two latter have
 been superseded with IES TM-30-15 and CFI 2017. To bring Colour up to latest
 standards, those two metrics need to be implemented.
 
-#### Initial Steps
-
-- Study the `colour.quality` sub-package
-- Implement IES TM-30-15
-- Implement CFI 2017
-
-#### Useful Experience
+#### Helpful Experience
 
 - Colour science and colour quality
 - Ability to read scientific publications
 - Knowledge of Numpy and Scipy
 - Basic knowledge of Colour
+
+#### First Steps
+
+- Study the `colour.quality` sub-package
+- Implement IES TM-30-15
+- Implement CFI 2017
 
 ### *New Spectral Upsampling Methods*
 
@@ -158,7 +158,7 @@ benefit from the latest research algorithms.
 | --- | --- | --- |
 | Implement new Spectral Upsampling Methods. | Medium | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
-#### Detailed Description
+#### Technical Details
 
 Spectral representation and processing is critical to faithfully model
 metamerism and accurately produce radiometric quantities. Unfortunately,
@@ -175,7 +175,14 @@ around this topic with recent publications from
 or [Peters et al. (2019)](https://doi.org/10.1145/3306346.3322964). Colour
 would highly benefit from having those algorithms implemented.
 
-#### Initial Steps
+#### Helpful Experience
+
+- Colour science and spectral rendering
+- Experience in numerical optimization
+- Knowledge of Numpy and Scipy
+- Basic knowledge of Colour
+
+#### First Steps
 
 - Research the latest publications and literature on spectral upsampling
 - Study the `colour.recovery` sub-package
@@ -185,13 +192,6 @@ would highly benefit from having those algorithms implemented.
   a second time, and if only nothing significant was highlighted in recent
   research.
 
-#### Useful Experience
-
-- Colour science and spectral rendering
-- Experience in numerical optimization
-- Knowledge of Numpy and Scipy
-- Basic knowledge of Colour
-
 ### *LUT IO Improvements*
 
 #### Abstract
@@ -199,11 +199,11 @@ would highly benefit from having those algorithms implemented.
 | **Objectives** | **Difficulty** | **Mentors** |
 | --- | --- | --- |
 
-#### Detailed Description
+#### Technical Details
 
-#### Initial Steps
-
-#### Useful Experience
+#### Helpful Experience
 
 - Knowledge of Numpy and Scipy
 - Basic knowledge of Colour
+
+#### First Steps
