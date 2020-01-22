@@ -35,9 +35,9 @@ Execution speed has never been the primary focus for the development, however,
 it is often an important factor to consider when adopting a library thus we
 would like to improve the general performance of Colour.
 
-| **Objectives** | **Difficulty** | **Mentors** |
-| --- | --- | --- |
-| Implementing a benchmarking suite, investigating usage of [CuPy](https://cupy.chainer.org/), [Bohrium](https://github.com/bh107/bohrium) or any relevant GPU backend (e.g., OpenCL), measuring performance, and finally based on the initial investigation, improving speed in image processing hotspots. | Medium/High | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves** | **Mentors** |
+| --- | --- | --- | --- |
+| Moderate/Hard | Medium | Implementing a benchmarking suite, investigating usage of [CuPy](https://cupy.chainer.org/), [Bohrium](https://github.com/bh107/bohrium) or any relevant GPU backend (e.g., OpenCL), measuring performance, and finally based on the initial investigation, improving speed in image processing hotspots. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -76,9 +76,9 @@ Colour implements Colour Appearance Models (CAM), most notably Hunt, CIECAM02
 and CAM16. More models would be useful for research purposes, especially for
 High Dynamic Range (HDR) image processing.
 
-| **Objectives** | **Difficulty** | **Mentors** |
-| --- | --- | --- |
-| Implement new Colour Appearance Models. | Medium | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves** | **Mentors** |
+| --- | --- | --- | --- |
+| Moderate | High | Implement new Colour Appearance Models. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -121,9 +121,9 @@ It supersedes the [Colour Rendering Index (CRI)](https://en.wikipedia.org/wiki/C
 and should be implemented in Colour along with the related
 [IES TM-30-15](http://www.ies.org/store/product/ies-method-for-evaluating-light-source-color-rendition-3368.cfm).
 
-| **Objectives** | **Difficulty** | **Mentors** |
-| --- | --- | --- |
-| Implement new Colour Quality Metrics. | Medium | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves** | **Mentors** |
+| --- | --- | --- | --- |
+| Moderate | High | Implement new Colour Quality Metrics. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -154,9 +154,9 @@ benefit from the latest research algorithms.
 
 #### Abstract
 
-| **Objectives** | **Difficulty** | **Mentors** |
-| --- | --- | --- |
-| Implement new Spectral Upsampling Methods. | Medium | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves** | **Mentors** |
+| --- | --- | --- | --- |
+| Moderate | High | Implement new Spectral Upsampling Methods. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -196,8 +196,8 @@ would highly benefit from having those algorithms implemented.
 
 #### Abstract
 
-| **Objectives** | **Difficulty** | **Mentors** |
-| --- | --- | --- |
+| **Intensity** | **Priority** | **Involves** | **Mentors** |
+| --- | --- | --- | --- |
 
 #### Technical Details
 
