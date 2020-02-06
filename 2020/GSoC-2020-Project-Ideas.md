@@ -129,7 +129,9 @@ and should be implemented in Colour along with the related
 
 Colour implements the SSI, CRI and CQS quality metrics, the two latter have
 been superseded with IES TM-30-15 and CFI 2017. To bring Colour up to latest
-standards, those two metrics need to be implemented.
+standards, those two metrics need to be implemented. Leveraging that those new
+metrics, an exhaustive light quality report using new plotting definitions
+should be implemented.
 
 #### Helpful Experience
 
