@@ -191,19 +191,3 @@ would highly benefit from having those algorithms implemented.
 - Implement support for Mallett and Yuksel (2019) and Peters et al. (2019) in
   a second time, and if only nothing significant was highlighted in recent
   research.
-
-### *LUT IO Improvements*
-
-#### Abstract
-
-| **Intensity** | **Priority** | **Involves** | **Mentors** |
-| --- | --- | --- | --- |
-
-#### Technical Details
-
-#### Helpful Experience
-
-- Knowledge of Numpy and Scipy
-- Basic knowledge of Colour
-
-#### First Steps
