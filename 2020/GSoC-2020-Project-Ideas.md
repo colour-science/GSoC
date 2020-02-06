@@ -96,7 +96,7 @@ addition.
 
 #### Helpful Experience
 
-- Colour sicence and colour appearance modeling
+- Colour science and colour appearance modeling
 - Ability to read scientific publications
 - Knowledge of Numpy and Scipy
 - Basic knowledge of Colour
