@@ -193,3 +193,37 @@ would highly benefit from having those algorithms implemented.
 - Implement support for Mallett and Yuksel (2019) and Peters et al. (2019) in
   a second time, and if only nothing significant was highlighted in recent
   research.
+
+### *LUT IO Improvements*
+
+#### Abstract
+
+| **Intensity** | **Priority** | **Involves** | **Mentors** |
+| --- | --- | --- | --- |
+| Moderate | High | Improve LUT Input/Output Capabilities. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+
+#### Technical Details
+
+Colour offers good support for lookup table (LUT) input and output but [several
+features could be implemented](https://github.com/colour-science/colour/issues/500)
+to improve the current capabilities:
+
+- Support for LUT inversion
+- [CLF 3](http://j.mp/S-2014-006) support
+- Implement a Log2 shaper as per OCIO reference
+- Implement an ExponentWithLinear function
+- Implement a generic parameterised camera log function
+- Document how to bake a shaper + LUT combo
+- Fix the various minor CSP LUT issues
+- Ensure that the `colour.LUT_to_LUT` definition handles explicit domains
+- Fix the `.spi3d` LUT indexing on read as per OCIO reference
+
+#### Helpful Experience
+
+- Knowledge of Numpy and Scipy
+- Basic knowledge of Colour
+
+#### First Steps
+
+- Study the `colour.io.luts` sub-package
+- Address one of the fixes or implement one of the minor features
