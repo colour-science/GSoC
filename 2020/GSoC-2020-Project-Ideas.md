@@ -16,6 +16,7 @@ It is freely available under the [New BSD License](https://opensource.org/licens
   - [*New Colour Appearance Models*](#new-colour-appearance-models)
   - [*New Colour Quality Metrics*](#new-colour-quality-metrics)
   - [*New Spectral Upsampling Methods*](#new-spectral-upsampling-methods)
+  - [*Gamut Mapping*](#gamut-mapping)
   - [*LUT IO Improvements*](#lut-io-improvements)
 
 ## Mentors
@@ -193,6 +194,51 @@ would highly benefit from having those algorithms implemented.
 - Implement support for Mallett and Yuksel (2019) and Peters et al. (2019) in
   a second time, and if only nothing significant was highlighted in recent
   research.
+
+### *Gamut Mapping*
+
+Gamut mapping is a core component for any colour management system. Direct
+support in Colour for display-referred centric Gamut Mapping algorithms such as
+that given by [Morovic and Luo (2000)](https://www.researchgate.net/publication/228955418_Calculating_medium_and_image_gamut_boundaries_for_gamut_mapping)
+has been requested on a few occasions. Coincidentally, the
+[A.M.P.A.S.](https://www.oscars.org/) has started an initiative about
+scene-referred Gamut Mapping. The techniques might be different but the core
+principles are the same: mapping colours from a larger solid of
+colour within a smaller solid while producing faithful and plausible values.
+
+#### Abstract
+
+| **Intensity** | **Priority** | **Involves** | **Mentors** |
+| --- | --- | --- | --- |
+| High | High | Implement support for Gamut Mapping. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+
+#### Technical Details
+
+Gamut mapping is usually implemented as a two step process. First, the
+boundaries of the two gamuts of interest are computed, producing two Gamut
+Boundary Descriptors. Then, colours of the larger solid are mapped within the
+smaller solid, commonly via raycasting. [CIE 156:2004](http://cie.co.at/publications/guidelines-evaluation-gamut-mapping-algorithms) provides guidelines covering
+numerous aspects of GMA evaluation including test images, media, viewing
+conditions, measurement, gamut boundary calculation, gamut mapping algorithms,
+colour spaces and experimental method. Some preliminary work was started by the
+Colour Developers in the
+[feature/gamut_mapping](https://github.com/colour-science/colour/tree/feature/gamut_mapping)
+branch and the generation of the Gamut Boundary Descriptor is in a decent state.
+
+#### Helpful Experience
+
+- Colour science and computer graphics
+- Experience with meshing and tesselation
+- Experience with raycasting and raytracing
+- Knowledge of Numpy and Scipy
+- Basic knowledge of Colour
+
+#### First Steps
+
+- Study the relevant literature, e.g. Morovic and Luo (2000) and CIE 156:2004
+- Pull down the [feature/gamut_mapping](https://github.com/colour-science/colour/tree/feature/gamut_mapping) branch and study the `colour.gamut` sub-package
+- Complete the Gamut Boundary Descriptor implementation
+- Implement various gamut mapping methods
 
 ### *LUT IO Improvements*
 
