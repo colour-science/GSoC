@@ -120,7 +120,7 @@ The CIE current recommended method for measuring Colour Quality is the
 [CIE 2017 Colour Fidelity Index (CFI 2017)](http://cie.co.at/publications/cie-2017-colour-fidelity-index-accurate-scientific-use).
 It supersedes the [Colour Rendering Index (CRI)](https://en.wikipedia.org/wiki/Color_rendering_index)
 and should be implemented in Colour along with the related
-[IES TM-30-15](http://www.ies.org/store/product/ies-method-for-evaluating-light-source-color-rendition-3368.cfm).
+[ANSI/IES TM-30-18](https://www.ies.org/product/ies-method-for-evaluating-light-source-color-rendition/).
 
 | **Intensity** | **Priority** | **Involves** | **Mentors** |
 | --- | --- | --- | --- |
@@ -129,7 +129,7 @@ and should be implemented in Colour along with the related
 #### Technical Details
 
 Colour implements the SSI, CRI and CQS quality metrics, the two latter have
-been superseded with IES TM-30-15 and CFI 2017. To bring Colour up to latest
+been superseded with ANSI/IES TM-30-18 and CFI 2017. To bring Colour up to latest
 standards, those two metrics need to be implemented. Leveraging that those new
 metrics, an exhaustive light quality report using new plotting definitions
 should be implemented.
@@ -144,7 +144,7 @@ should be implemented.
 #### First Steps
 
 - Study the `colour.quality` sub-package
-- Implement IES TM-30-15
+- Implement ANSI/IES TM-30-18
 - Implement CFI 2017
 
 ### *New Spectral Upsampling Methods*
