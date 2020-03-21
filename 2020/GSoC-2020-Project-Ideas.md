@@ -23,6 +23,7 @@ It is freely available under the [New BSD License](https://opensource.org/licens
 
 - [Michael Mauderer](https://github.com/MichaelMauderer)
 - [Thomas Mansencal](https://github.com/KelSolaar)
+- [Hao Xie](https://github.com/hao-xie)
 
 ## Project Ideas
 
@@ -79,7 +80,7 @@ High Dynamic Range (HDR) image processing.
 
 | **Intensity** | **Priority** | **Involves** | **Mentors** |
 | --- | --- | --- | --- |
-| Moderate | High | Implement new Colour Appearance Models. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| Moderate | High | Implement new Colour Appearance Models. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar), [Hao Xie](https://github.com/hao-xie) |
 
 #### Technical Details
 
