@@ -152,7 +152,7 @@ should be implemented.
 
 Spectral upsampling (or recovery) is the conversion of CIE XYZ tristimulus values
 (or RGB values) to the spectral domain. Colour already implements
-[Smith (1999)](https://doi.org/10.1080/10867651.1999.10487511) and
+[Smits (1999)](https://doi.org/10.1080/10867651.1999.10487511) and
 [Meng et al. (2015)](https://doi.org/10.1111/cgf.12676) methods and would
 benefit from the latest research algorithms.
 
