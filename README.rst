@@ -15,9 +15,9 @@ GSoC 2020
 
 - `Project Ideas <2020/GSoC-2020-Project-Ideas.md>`__
 
-A [spreadsheet](https://docs.google.com/spreadsheets/d/1ym8ezrKxRWcNq7RDeXWA0mqmS8I8fCh7Qa5k22BgS94/edit?usp=sharing)
+A `spreadsheet <https://docs.google.com/spreadsheets/d/1ym8ezrKxRWcNq7RDeXWA0mqmS8I8fCh7Qa5k22BgS94/edit?usp=sharing>`__
 containing the student applications and mentors information is
-[publicly available](https://docs.google.com/spreadsheets/d/1ym8ezrKxRWcNq7RDeXWA0mqmS8I8fCh7Qa5k22BgS94/edit?usp=sharing).
+`publicly available <https://docs.google.com/spreadsheets/d/1ym8ezrKxRWcNq7RDeXWA0mqmS8I8fCh7Qa5k22BgS94/edit?usp=sharing>`__.
 
 Code of Conduct
 ---------------
