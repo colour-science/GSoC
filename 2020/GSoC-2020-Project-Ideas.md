@@ -74,9 +74,9 @@ with Cython, Rust or OpenCL.
 
 #### Abstract
 
-Colour implements Colour Appearance Models (CAM), most notably Hunt, CIECAM02
-and CAM16. More models would be useful for research purposes, especially for
-High Dynamic Range (HDR) image processing.
+Colour implements various Colour Appearance Models (CAM), most notably Hunt,
+CIECAM02 and CAM16. More models would be useful for research purposes,
+especially for High Dynamic Range (HDR) image processing.
 
 | **Intensity** | **Priority** | **Involves** | **Mentors** |
 | --- | --- | --- | --- |
