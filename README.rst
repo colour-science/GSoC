@@ -10,6 +10,11 @@ under `NumFOCUS <http://numfocus.org/>`__ umbrella.
 
 This repository contains the various documents pertaining to our participation.
 
+GSoC 2021
+---------
+
+- `Project Ideas <2021/GSoC-2021-Project-Ideas.md>`__
+
 GSoC 2020
 ---------
 
