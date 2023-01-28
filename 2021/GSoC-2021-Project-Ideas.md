@@ -39,9 +39,9 @@ Colour implements many colour models such as CIE L\*a\*b\*, DIN99, CAM16-UCS
 or JzAzBz. With the intent of being as thorough as possible, it is desirable
 to add new colour models or extend existing ones.
 
-| **Intensity** | **Priority** | **Involves**                 | **Mentors**                                                                                              |
-|---------------|--------------|------------------------------|----------------------------------------------------------------------------------------------------------|
-| Moderate      | High         | Implement new Colour Models. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves**                                                             | **Mentors**                                                                                              |
+|---------------|--------------|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Moderate      | High         | Implementing new colour models and learning about colour transformations | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -87,9 +87,9 @@ Colour implements various Colour Appearance Models (CAM), most notably Hunt,
 CIECAM02 and CAM16. More models would be useful for research purposes,
 especially for High Dynamic Range (HDR) image processing.
 
-| **Intensity** | **Priority** | **Involves**                            | **Mentors**                                                                                              |
-|---------------|--------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Moderate      | High         | Implement new Colour Appearance Models. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves**                                                                      | **Mentors**                                                                                              |
+|---------------|--------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Moderate      | High         | Implementing new colour appearance models and learning about advanced colorimetry | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 

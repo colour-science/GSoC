@@ -37,9 +37,9 @@ Execution speed has never been the primary focus for the development, however,
 it is often an important factor to consider when adopting a library thus we
 would like to improve the general performance of Colour.
 
-| **Intensity** | **Priority** | **Involves** | **Mentors** |
-| --- | --- | --- | --- |
-| Moderate/Hard | Medium | Implementing a benchmarking suite, investigating usage of [CuPy](https://cupy.chainer.org/), [Bohrium](https://github.com/bh107/bohrium) or any relevant GPU backend (e.g., OpenCL), measuring performance, and finally based on the initial investigation, improving speed in image processing hotspots. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves**                                                                                                                                                                                                                                                                                              | **Mentors**                                                                                              |
+|---------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Moderate/Hard | Medium       | Implementing a benchmarking suite, investigating usage of [CuPy](https://cupy.chainer.org/), [Bohrium](https://github.com/bh107/bohrium) or any relevant GPU backend (e.g., OpenCL), measuring performance, and finally based on the initial investigation, improving speed in image processing hotspots. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -78,9 +78,9 @@ Colour implements various Colour Appearance Models (CAM), most notably Hunt,
 CIECAM02 and CAM16. More models would be useful for research purposes,
 especially for High Dynamic Range (HDR) image processing.
 
-| **Intensity** | **Priority** | **Involves** | **Mentors** |
-| --- | --- | --- | --- |
-| Moderate | High | Implement new Colour Appearance Models. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar), [Hao Xie](https://github.com/hao-xie) |
+| **Intensity** | **Priority** | **Involves**                            | **Mentors**                                                                                                                                     |
+|---------------|--------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Moderate      | High         | Implement new Colour Appearance Models. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar), [Hao Xie](https://github.com/hao-xie) |
 
 #### Technical Details
 
@@ -123,9 +123,9 @@ It supersedes the [Colour Rendering Index (CRI)](https://en.wikipedia.org/wiki/C
 and should be implemented in Colour along with the related
 [ANSI/IES TM-30-18](https://www.ies.org/product/ies-method-for-evaluating-light-source-color-rendition/).
 
-| **Intensity** | **Priority** | **Involves** | **Mentors** |
-| --- | --- | --- | --- |
-| Moderate | High | Implement new Colour Quality Metrics. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves**                                                               | **Mentors**                                                                                              |
+|---------------|--------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Moderate      | High         | Implementing new colour quality metrics and learning about colour fidelity | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -158,9 +158,9 @@ benefit from the latest research algorithms.
 
 #### Abstract
 
-| **Intensity** | **Priority** | **Involves** | **Mentors** |
-| --- | --- | --- | --- |
-| Moderate | High | Implement new Spectral Upsampling Methods. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves**                                                                       | **Mentors**                                                                                              |
+|---------------|--------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Moderate      | High         | Implement new spectral upsampling methods and learning about spectral computations | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -209,9 +209,9 @@ colour within a smaller solid while producing faithful and plausible values.
 
 #### Abstract
 
-| **Intensity** | **Priority** | **Involves** | **Mentors** |
-| --- | --- | --- | --- |
-| High | High | Implement support for Gamut Mapping. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves**                                                                                 | **Mentors**                                                                                              |
+|---------------|--------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| High          | High         | Implementing support for gamut mapping and learning about gamut boundary and its description | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -245,9 +245,9 @@ branch and the generation of the Gamut Boundary Descriptor is in a decent state.
 
 #### Abstract
 
-| **Intensity** | **Priority** | **Involves** | **Mentors** |
-| --- | --- | --- | --- |
-| Moderate | High | Improve LUT Input/Output Capabilities. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves**                                                             | **Mentors**                                                                                              |
+|---------------|--------------|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Moderate      | High         | Improving LUT input/output capabilities and learning about lookup tables | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
