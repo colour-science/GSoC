@@ -76,7 +76,7 @@ would be good candidates for addition:
   base for the IPT-like spaces such as IPT, ICtCp, JzAzBz, and OKLab
 - Implement support for the Prolab colourspace
 - Implement support for the DIN99 variants while refactoring the common base
-- Implement support for Y"u"v" colourspace and its chromaticity diagram plot.
+- Implement support for Y"u"v" colourspace and its chromaticity diagram plot
 - Implement support for the ULab colourspace
 
 ### *New Colour Appearance Models*
@@ -115,7 +115,7 @@ addition.
 #### First Steps
 
 - Study the `colour.appearance` sub-package
-- Replace the fixtures-based unit tests with regular unit tests consistent with the remaining of the codebase.
+- Replace the fixtures-based unit tests with regular unit tests consistent with the remaining of the codebase
 - Implement Sadfar et al. (2018) CAM forward and reverse transformations
 - Implement the remaining CAMs in the preferred following order:
     - Kim, Weyrich and Kautz (2009)
