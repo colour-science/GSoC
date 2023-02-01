@@ -39,9 +39,9 @@ Colour implements many colour models such as CIE L\*a\*b\*, DIN99, CAM16-UCS
 or JzAzBz. With the intent of being as thorough as possible, it is desirable
 to add new colour models or extend existing ones.
 
-| **Intensity** | **Priority** | **Involves**                 | **Mentors**                                                                                              |
-|---------------|--------------|------------------------------|----------------------------------------------------------------------------------------------------------|
-| Moderate      | High         | Implement new Colour Models. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves**                                                             | **Mentors**                                                                                              |
+|---------------|--------------|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Moderate      | High         | Implementing new colour models and learning about colour transformations | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -76,7 +76,7 @@ would be good candidates for addition:
   base for the IPT-like spaces such as IPT, ICtCp, JzAzBz, and OKLab
 - Implement support for the Prolab colourspace
 - Implement support for the DIN99 variants while refactoring the common base
-- Implement support for Y"u"v" colourspace and its chromaticity diagram plot.
+- Implement support for Y"u"v" colourspace and its chromaticity diagram plot
 - Implement support for the ULab colourspace
 
 ### *New Colour Appearance Models*
@@ -87,9 +87,9 @@ Colour implements various Colour Appearance Models (CAM), most notably Hunt,
 CIECAM02 and CAM16. More models would be useful for research purposes,
 especially for High Dynamic Range (HDR) image processing.
 
-| **Intensity** | **Priority** | **Involves**                            | **Mentors**                                                                                              |
-|---------------|--------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Moderate      | High         | Implement new Colour Appearance Models. | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Intensity** | **Priority** | **Involves**                                                                      | **Mentors**                                                                                              |
+|---------------|--------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Moderate      | High         | Implementing new colour appearance models and learning about advanced colorimetry | [Michael Mauderer](https://github.com/MichaelMauderer), [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
@@ -115,7 +115,7 @@ addition.
 #### First Steps
 
 - Study the `colour.appearance` sub-package
-- Replace the fixtures-based unit tests with regular unit tests consistent with the remaining of the codebase.
+- Replace the fixtures-based unit tests with regular unit tests consistent with the remaining of the codebase
 - Implement Sadfar et al. (2018) CAM forward and reverse transformations
 - Implement the remaining CAMs in the preferred following order:
     - Kim, Weyrich and Kautz (2009)
