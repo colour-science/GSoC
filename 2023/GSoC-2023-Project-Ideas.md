@@ -35,9 +35,9 @@ information. The standard can be extended on per-application basis as required.
 Colour would benefit from a CxF parser to exchange data with digital industry
 software such as that from X-Rite.
 
-| **Intensity** | **Priority** | **Involves**                                                                      | **Mentors**                                      |
-|---------------|--------------|-----------------------------------------------------------------------------------|--------------------------------------------------|
-| Moderate      | High         | Implementing support for CxF and learning how to write a parser for an XML schema | [Thomas Mansencal](https://github.com/KelSolaar) |
+| **Project Length** | **Intensity** | **Priority** | **Involves**                                                                      | **Mentors**                                      |
+|--------------------|---------------|--------------|-----------------------------------------------------------------------------------|--------------------------------------------------|
+|          350 hours | Moderate      | High         | Implementing support for CxF and learning how to write a parser for an XML schema | [Thomas Mansencal](https://github.com/KelSolaar) |
 
 #### Technical Details
 
